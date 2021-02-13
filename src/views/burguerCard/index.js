@@ -1,7 +1,11 @@
 import React from 'react';
+import CardStyled from './style';
 
 const BurguerCard = () => {
-  return <h1> BurguerCard </h1>
-};
+  return (
+    <CardStyled>
+      BurguerCard 
+    </CardStyled>
+  )};
 
 export default BurguerCard;
