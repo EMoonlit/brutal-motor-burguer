@@ -1,4 +1,4 @@
-export const data = {
+const data = {
     hamburgueres: [
         {
             id: 0,
@@ -92,5 +92,15 @@ export const data = {
             promotion: false,
             combo: false
         }
+    ],
+    drinks: [
+        {
+            id: 0,
+            name: 'Coca-Cola',
+            thumbnail: 'thumbnail',
+            price: 5
+        }
     ]
 }
+
+export default data;

@@ -1,10 +1,10 @@
 import React from 'react';
 import CardStyled from './style';
 
-const BurguerCard = () => {
+const BurguerCard = ({title}) => {
   return (
     <CardStyled>
-      BurguerCard 
+      {title} 
     </CardStyled>
   )};
 
