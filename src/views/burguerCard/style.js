@@ -1,20 +1,28 @@
 import styled from 'styled-components';
 
  const CardStyled = styled.div`
+  align-items: center;
   background-color: #FFD100;
-  border: 1px solid;
+  border: 1px solid black;
   border-radius: 10px;
-  padding: 5px 10px;
-  transition: all ease 0.2s;
-  outline: none;
-  transform: scale(0.9);
-  transform: all ease 0.2s;
+  display:flex;
+  flex-direction: column;
+  font-weight: 600;
+  justify-content: center;
+  margin: 10px;
+  padding: 0 0 5px;
+  text-align: center;
+  width: 260px;
 
-  :hover {
-    cursor: pointer;
+  img {
+    border-radius: 5px;
+    height: 260px;
+    margin: 0;
+    width: 260px;
   }
-  :active {
-    transform: scale(1);
+
+  span {
+    font-size: 20px;
   }
 `;
 
