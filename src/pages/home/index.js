@@ -1,19 +1,22 @@
-import React, { Fragment } from 'react';
-import * as cp from '../../components';
+import React from 'react';
 import * as view from '../../views';
 import data from '../../services/data';
+import { MainContainer, BurguerContainer, BanerContainer } from './style';
 
 const Home = () => {
   return (
-    <Fragment>
-      < view.Login />
-      <cp.Button children={ "Teste" } getEvent={ () => console.log(data.hamburgueres)} />
-      <cp.Input getEvent={ (e) => console.log(e)} />
-      <div style={{display: "flex", width: "95vw", backgroundColor: "white", height: "100vw", justifyItems: "center", alignItems: "space-around", flexWrap: "wrap", overflowY: "scroll" }}>
+    <>
+    < view.Login />
+    < MainContainer>
+      < BanerContainer>
+       <h2>SUA FOME ACABA AQUI!</h2>
+      </BanerContainer>
+      < BurguerContainer >
       { data.hamburgueres.map((item, index) => <view.BurguerCard item={item} key={index} /> )}
-      </div>
-      < view.Footer />
-    </Fragment>
+      </BurguerContainer>
+    </MainContainer>
+    < view.Footer />
+    </>
   );
 }
 

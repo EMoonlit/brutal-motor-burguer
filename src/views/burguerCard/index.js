@@ -8,7 +8,6 @@ const BurguerCard = ({item}) => {
       <img src={item.thumbnail} alt={`Imagem do ${item.name}`}/>
       <h2>{item.name}</h2>
       <span>{`R$ ${item.price},00`}</span>
-      <span>Quantidade</span>
       <cp.Button children={'Comprar'} getEvent={ () => console.log('xablau')}/>
     </CardStyled>
   )};

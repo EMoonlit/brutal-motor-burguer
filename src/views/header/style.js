@@ -6,11 +6,13 @@ const Container = Styled.div`
   top: 0;
   color: white;
   display: flex;
-  height: 55px;
-  justify-content: space-between;
+  flex-direction: Column;
+  height: 85px;
+  justify-content: center;
   width: 100vw;
   position: fixed;
-`
+  z-index: 10;
+`;
 
 const Wrapper = Styled.div``;
 const Column = Styled.div``;

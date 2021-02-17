@@ -4,7 +4,7 @@ import Container from './style';
 const Footer = ({item}) => {
   return (
     < Container>
-      <span> Xábau </span>
+      <span> Desenvolvido por <a href='https://github.com/EMoonlit'>@EMoonlit</a> </span>
     </ Container>
   )};
 

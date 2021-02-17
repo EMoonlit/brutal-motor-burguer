@@ -7,11 +7,15 @@ const Container = Styled.div`
   color: white;
   display: flex;
   height: 55px;
-  justify-content: space-between;
-  margin-top: 5px;
+  justify-content: center;
   width: 100vw;
   position: fixed;
-`
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+`;
 
 const Wrapper = Styled.div``;
 const Column = Styled.div``;

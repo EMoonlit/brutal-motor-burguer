@@ -15,7 +15,8 @@ import styled from 'styled-components';
   width: 260px;
 
   img {
-    border-radius: 5px;
+    padding: 2px;
+    border-radius: 10px;
     height: 260px;
     margin: 0;
     width: 260px;
@@ -23,6 +24,12 @@ import styled from 'styled-components';
 
   span {
     font-size: 20px;
+  }
+
+  button {
+    width: 50%;
+    background-color: #3F3F3F;
+    color: #FFD100;
   }
 `;
 

@@ -1,2 +1,2 @@
 export { default as Home } from './home';
-export { default as Burguers } from './burguers';
+export { default as Details } from './details';

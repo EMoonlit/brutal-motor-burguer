@@ -7,7 +7,7 @@ import GlobalStyle from './style/globalStyle';
 function App() {
   return (
       <BrowserRouter>
-        < GlobalStyle />
+      < GlobalStyle />
         < Routes />
       </BrowserRouter>
   );

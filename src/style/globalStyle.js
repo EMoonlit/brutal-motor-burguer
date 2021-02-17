@@ -1,16 +1,25 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  html, body {
-    box-sizing: border-box;
+  * {    
     margin: 0;
     padding: 0;
-    position: relative;
+    box-sizing: border-box;
+    outline: 0;
+  }
+  
+  body {
     background: #3F3F3F;
-    justify-content: center;
+    display: flex;
     align-items: center;
     font-family: Open-sans, Arial, Helvetica, sans-serif, sans-serif;
-}
+  }
+
+  @keyframes is-rotating {
+    to {
+      transform: rotate(2turn);
+    }
+  }
 `;
 
 export default GlobalStyle;
