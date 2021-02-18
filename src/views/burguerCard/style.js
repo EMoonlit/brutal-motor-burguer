@@ -31,6 +31,11 @@ import styled from 'styled-components';
     background-color: #3F3F3F;
     color: #FFD100;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 export default CardStyled;

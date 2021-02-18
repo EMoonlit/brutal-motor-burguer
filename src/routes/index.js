@@ -10,6 +10,10 @@ const Routes = () => (
       component={ page.Home }
     />
     <Route
+      path="/Cart"
+      component={ page.Cart }
+    />
+    <Route
       path="/burguers/:id"
       component={ page.Details }
     />

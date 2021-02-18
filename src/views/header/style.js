@@ -12,6 +12,11 @@ const Container = Styled.div`
   width: 100vw;
   position: fixed;
   z-index: 10;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 `;
 
 const Wrapper = Styled.div``;
