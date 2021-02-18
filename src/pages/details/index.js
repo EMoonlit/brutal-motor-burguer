@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import * as view from '../../views';
 import * as cp from '../../components';
 import { MainContainer, MediaContainer, InfoContainer } from './style';
-import data from '../../services/data';
+//import data from '../../services/data';
+import MotorContext from '../../context/MotorContext';
 
 const Details = () => {
+  const { burguersList, isLoading } = useContext(MotorContext)
 
-  const item = data.hamburgueres[0];
+  const item = burguersList[0];
   return (
     <>
+     { isLoading ? <cp.Loading /> :
+      <>
       < view.Login />
         < MainContainer >
           < MediaContainer >
@@ -25,10 +29,14 @@ const Details = () => {
              ))}
            </ul>
           < cp.Button getEvent={() => console.log('Add Carinho ')}> Adicionar ao Carrinho</cp.Button>
-          < cp.Button getEvent={() => console.log('Enviar Comanda!')} > Comprar! </cp.Button> 
+          < cp.Button getEvent={() => {
+            console.log(burguersList);        
+          }} > Comprar! </cp.Button> 
           </ InfoContainer> 
         </ MainContainer>
       < view.Footer />
+      </>
+    }
     </>
   );
 }
