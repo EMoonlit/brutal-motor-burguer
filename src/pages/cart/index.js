@@ -2,9 +2,15 @@ import React, { useContext, useEffect, useState } from 'react'
 import MainContainer from './style';
 import Motorcontext from '../../context/MotorContext';
 import * as view from '../../views';
+import * as cp from '../../components';
+import configureUrl from '../../services/whatsApi';
 
 const Cart = () => {
   const [total, setTotal] = useState(0);
+  const [personalInfo, setPersonalInfo] = useState({
+    name: '',
+    adress: '',
+  })
   const { cartList } = useContext(Motorcontext);
   useEffect(()=> {
     const sumPrices = () => {
@@ -12,6 +18,12 @@ const Cart = () => {
       }
     sumPrices()
   }, [total, cartList])
+
+  const sendList = () => {
+    const url = configureUrl(personalInfo, cartList, total);
+    window.location.href =url
+  };
+
   return(
     <MainContainer>
       <view.Login />
@@ -29,6 +41,15 @@ const Cart = () => {
       )}
       </ul>
       <span>{`Atenção! O valor listado, Total: R$ ${total},00, não inclui a entrega.`}</span>
+      <cp.Input 
+        placeholder={'Digite aqui seu nome'}
+        getEvent={(e) => setPersonalInfo({ ...personalInfo, name: e })}
+      />
+      <cp.Input 
+        placeholder={'Digite aqui seu endereço'}
+        getEvent={(e) => setPersonalInfo({ ...personalInfo, adress: e })}
+      />
+      <cp.Button getEvent={() => sendList()}>Enviar Pedido!</cp.Button>
       <view.Footer/>
     </MainContainer>
   )
