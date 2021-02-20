@@ -7,7 +7,7 @@ const Login = ({item}) => {
     < Container>
       <nav>
       < Link to='/'>
-        <h1> Brutal MotorBurguer!</h1>
+        <h1> Brutal MotorBurger!</h1>
         <span>Brutalize sua Fome</span>
       </Link>
         < Link to='/'> Sobre </Link>
