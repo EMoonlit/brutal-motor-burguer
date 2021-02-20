@@ -66,7 +66,7 @@ const data = {
             thumbnail: 'https://s2.glbimg.com/yVvDp-zKU-RQyCmcOiru_uRjNb0=/620x430/e.glbimg.com/og/ed/f/original/2019/10/24/rebel_whopper.jpg',
             price: 24,
             comboPrice: 30,
-            ingredients: [ 'Pão de Gergelim', 'Blend da Casa (150g Carne)', 'Blend da Casa (150g Carne)' , 'Cebola Caramelizada', 'Duplo Bacon', 'Duplo Queijo', 'Molho Barbecue Caseiro'],
+            ingredients: [ 'Pão Australiano', 'Blend da Casa (150g Carne)', 'Blend da Casa (150g Carne)' , 'Cebola Caramelizada', 'Duplo Bacon', 'Duplo Queijo', 'Molho Barbecue Caseiro'],
             promotion: true,
             combo: false
         },
