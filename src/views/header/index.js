@@ -12,7 +12,7 @@ const Login = ({item}) => {
       </Link>
         < Link to='/'> Sobre </Link>
         < Link to='/'> Contato </Link>
-        < Link to='/cart'> Carrinho de Compras do Inferno </Link>
+        < Link to='/cart'> Carrinho de Compras </Link>
       </nav>
     </ Container>
   )};

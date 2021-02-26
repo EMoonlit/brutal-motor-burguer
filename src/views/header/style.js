@@ -16,6 +16,8 @@ const Container = Styled.header`
   a {
     text-decoration: none;
     color: white;
+ 
+
   }
 `;
 
