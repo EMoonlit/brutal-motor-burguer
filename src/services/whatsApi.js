@@ -1,6 +1,6 @@
 const configureUrl = (personalInfo, cartList, total) => {
   const listToString = cartList.map((item) => (`%0AR$ ${item.price},00  ${item.name}`))
-  const phone = '557196640747';
+  const phone = '557598756734';
   const name = personalInfo.name;
   const adress = personalInfo.adress;
   const totalPrice = `Total de R$ ${total},00%0A`;
