@@ -5,6 +5,7 @@ import fechingApi from '../../services/requestApi';
 
 function Provider({ children }) {
   const [burguersList, setBurguersList] = useState([]);
+  const [ingredientsList, setIngredientsList] = useState([]);
   const [isLoading, setIsLoaindg] = useState(true);
   const [cartList, setCartList] = useState([])
 
@@ -12,7 +13,7 @@ function Provider({ children }) {
     function requestData() {
         fechingApi().then((data) => {
         setBurguersList(data.hamburgueres);
-        console.log(burguersList);
+        setIngredientsList(data.ingredients);
         setIsLoaindg(false)
       });
     }
@@ -21,9 +22,11 @@ function Provider({ children }) {
 
   const contextValue = {
     burguersList,
+    ingredientsList,
     isLoading,
     cartList,
     setBurguersList,
+    setIngredientsList,
     setIsLoaindg,
     setCartList,
   };

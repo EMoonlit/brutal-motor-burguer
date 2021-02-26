@@ -118,6 +118,49 @@ const data = {
             thumbnail: 'thumbnail',
             price: 4
         }
+    ],
+    ingredients: [
+      {
+        name: 'Molho Gorgonzola',
+        price: 1,
+      },
+      {
+        name: 'Tomate Confitado',
+        price: 1,
+      },
+      {
+        name: 'Cebola Caramelizada',
+        price: 1,
+      },
+      {
+        name: 'Queijo',
+        price: 1,
+      },
+      {
+        name: 'Bacon',
+        price: 1,
+      },
+      {
+        name: 'Tomate',
+        price: 1,
+      },
+      {
+        name: 'Rúcula',
+        price: 1,
+      },
+      {
+        name: 'Blend da Casa (150g Carne)',
+        price: 1,
+      },
+      {
+        name: 'Blend da Casa (150g Frango)',
+        price: 1,
+      },
+      {
+        name: 'Blend Smash (90g Carne)',
+        price: 1,
+      },
+
     ]
 }
 

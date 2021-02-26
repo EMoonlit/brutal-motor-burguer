@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 
-const Container = Styled.div`
+const Container = Styled.header`
   align-items: center;
   background-color: black;
   top: 0;
