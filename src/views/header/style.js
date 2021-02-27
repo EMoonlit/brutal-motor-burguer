@@ -1,14 +1,14 @@
 import Styled from 'styled-components';
 
-const Container = Styled.header`
+export const Container = Styled.header`
   align-items: center;
-  background-color: black;
+  background-color: rgb( 0, 0, 0, 0.9);
   top: 0;
   color: white;
   display: flex;
-  flex-direction: Column;
+  flex-direction: Row;
   height: 85px;
-  justify-content: center;
+  justify-content: space-between;
   width: 100vw;
   position: fixed;
   z-index: 10;
@@ -19,12 +19,20 @@ const Container = Styled.header`
  
 
   }
+
+  img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
-const Wrapper = Styled.div``;
-const Column = Styled.div``;
-const Row = Styled.div``;
-const Link = Styled.div``;
-const Title = Styled.div``;
+export const Nav = Styled.nav`
+  width: 100%;
+  height: 85px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  
 
-export default Container;
+`;

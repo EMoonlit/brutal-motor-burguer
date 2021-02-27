@@ -1,20 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Container from './style';
+import { Container, Nav } from './style';
+import * as cp from '../../components';
+import Logo from '../../assets/BrutalLogoAmarelo.svg';
 
-const Login = ({item}) => {
+const Login = () => {
   return (
-    < Container>
-      <nav>
+    < Container >
+    < Nav>
       < Link to='/'>
-        <h1> Brutal MotorBurger!</h1>
-        <span>Brutalize sua Fome</span>
+        <img className='logo' src={ Logo } alt='Brutal MotorBurger!' />
       </Link>
-        < Link to='/'> Sobre </Link>
-        < Link to='/'> Contato </Link>
-        < Link to='/cart'> Carrinho de Compras </Link>
-      </nav>
-    </ Container>
+      < cp.BurguerNav />
+    </ Nav>
+    </Container>
   )};
 
 export default Login;
